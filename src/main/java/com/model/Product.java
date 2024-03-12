@@ -8,7 +8,6 @@ import java.math.BigInteger;
 //@Entity
 public class Product {
     private String name;
-    //@Generated
     private int id;
     private BigInteger price;
     private String description;
