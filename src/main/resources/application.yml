@@ -5,3 +5,16 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: productinventory
+      url: mongodb://localhost:27017/productinventory
+
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+
