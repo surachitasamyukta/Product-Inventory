@@ -13,8 +13,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DynamoDBConfig {
 
-    public static final String REGION = "ap-south-1";
-    public static final String SERVICE_ENDPOINT = "dynamodb.ap-south-1.amazonaws.com";
+    public static final String REGION = "";
+    public static final String SERVICE_ENDPOINT = "";
 
     @Bean
     public DynamoDBMapper getDynamoDBMapper() {
@@ -26,7 +26,7 @@ public class DynamoDBConfig {
                 .standard()
                 .withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration(SERVICE_ENDPOINT, REGION))
                 .withCredentials(new AWSStaticCredentialsProvider(
-                        new BasicAWSCredentials("AKIAUMR7YQ26TRQW4WYT", "CYqaRyvZPJZUK636Oghrg8oVmAfttTAw7rRWfL2J")) {
+                        new BasicAWSCredentials("", "")) {
                 })
                 .build();
     }
