@@ -12,7 +12,7 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        stage('Run test')
+        stage('Run122 test')
         {
             steps
             {
