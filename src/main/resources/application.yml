@@ -1,6 +1,7 @@
 server:
   port: 8082
-
+  servlet:
+    context-path: /inventory
 spring:
   mvc:
     pathmatch:
@@ -17,4 +18,7 @@ springdoc:
   swagger-ui:
     path: /swagger-ui.html
     enabled: true
-
+    url: /swagger-ui.html
+    disable-swagger-default-url: true
+  api-docs:
+    path: /api-docs

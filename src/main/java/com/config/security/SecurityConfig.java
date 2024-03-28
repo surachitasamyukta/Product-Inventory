@@ -39,8 +39,8 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         final String[] SWAGGER_WHITELIST = {
                 "/v3/api-docs/**",
-                "/swagger-ui/**",
-                "/swagger-ui.html",
+                "*/swagger-ui/**",
+                "*/swagger-ui.html",
         };
         httpSecurity
                 .authorizeRequests(authorizeRequests ->

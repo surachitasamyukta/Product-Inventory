@@ -1,3 +1,4 @@
+/*
 package com.config.aws;
 
 import com.amazonaws.auth.AWSCredentialsProvider;
@@ -31,3 +32,4 @@ public class DynamoDBConfig {
                 .build();
     }
 }
+*/
