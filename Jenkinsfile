@@ -4,7 +4,7 @@ pipeline {
         maven 'maven_3.9.6'
     }
     stages {
-        stage('Build Maven')
+        stage('Build Maven ')
         {
             steps
             {
